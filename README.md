@@ -35,4 +35,4 @@ esta es la pagina que aparece una vez se realice el login donde los usarios podr
 - Gestión de estudiantes.
 - Gestión de docentes.
 - Gestión de cursos o materias.
-
+- Otros módulos administrativos según los requerimientos del sistema.
