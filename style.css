@@ -1,7 +1,7 @@
 /*estilos bases*/
 :root {
-    --BaseColor1: #2a9d8f;
-    --BaseColor2: #1f7a6f;
+    --BaseColor1: #1f7a6f;
+    --BaseColor2: #2a9d8f;
     --BaseColor4: #ecfefd;
     --letrasBase1: #FFFFFF;
     --letrasBase4: #000000;
@@ -55,14 +55,20 @@ img, picture, video, canvas, svg {
     max-width: 100%;
     display: block;
 }
+.logo{
+    margin-left: -20px;
+    display: flex;
+    width: 100px;
+    height:fit-content;
+}
 .sidebar {
     display: flex;
-    background-color: var(--BaseColor2);
+    background-color: var(--BaseColor1);
     padding: 30px;
     flex-direction: column;
     justify-content: space-between;
     overflow-y: auto;
-    height: 95%;
+    height: 100%;
     width: 200px;
     position:fixed;
 }
@@ -75,16 +81,13 @@ img, picture, video, canvas, svg {
     display:flex;
     justify-content:space-between;
     align-items: center;
-    background-color: var(--BaseColor2);
+    background-color: var(--BaseColor1);
     padding: 15px 50px;
     position: sticky;
     top: 0;
     z-index: 10;
 }
-.user-foto{
-    display: flex;
-    width: 2%;
-}
+
 .opciones a {
     color: var(--letrasBase1);
     text-decoration: none;
@@ -134,6 +137,9 @@ thead {
 /*estilos natalia*/
 
 /*estilos danna*/
+.content-inicio{
+    background-color: var(--BaseColor2)
+}
 .content-admin{
     background-color: var(--BaseColor4);
     padding: 20px;
@@ -147,4 +153,5 @@ thead {
     text-align: center;
     margin-top: 2rem;
 }
+
 
