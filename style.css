@@ -86,6 +86,116 @@ img, picture, video, canvas, svg {
     margin: 20px;
 }
 /*estilos mariana*/
+/* ===== Base ===== */
+
+
+:root {
+    --BaseColor1: #081C15;
+    --BaseColor2: #1B4322;
+    --BaseColor3: #036666;
+    --BaseColor4: #EBF2FA;
+    --BaseColor5: gray; 
+    --letrasBase1: #FFFFFF;
+    --letrasBase4: #000000;
+    --BotonPrimario: #FBB02D;
+}
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: Arial, Helvetica, sans-serif; color: var(--BaseColor1); line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+
+/* ===== Header ===== */
+.encabezado {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 48px; background: var(--letrasBase1);
+  border-bottom: 2px solid var(--letrasBase1);
+  position: sticky; top: 0; z-index: 10;
+}
+
+.menu { display: flex; gap: 32px; }
+.menu a:hover { color: var(--BaseColor1); }
+.btn-login { padding: 8px 20px; border: 2px solid var(--BaseColor1); border-radius: 6px; color: var(--BaseColor1); }
+.btn-login:hover { background: var(--verde); color: var(--BaseColor1); }
+
+/* ===== Botón ===== */
+.btn {
+  display: inline-block; padding: 12px 32px; background: var(--BotonPrimario);
+  color: var(--letrasBase1); border-radius: 6px; font-weight: bold;
+}
+.btn:hover { background: var(--letrasBase1); }
+
+/* ===== Hero ===== */
+.hero {
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 480px; padding: 48px; background: var(--BaseColor2);
+}
+.hero-texto { max-width: 600px; }
+.hero-pre { font-size: 3rem; color: var(--letrasBase1); }
+.hero h1 { font-size: 5rem; line-height: 1; margin: 2px 0;}
+.hero-sub { font-size: 1rem; margin-bottom: 24px; color: var(--letrasBase1); }
+.hero-arcos { display: flex; align-items: flex-end; gap: 20px; }
+.arco {
+  width: 160px; background: var(--letrasBase1);
+  border-radius: 80px 80px 0 0;
+}
+.arco-1 { height: 260px; opacity: 0.7; }
+.arco-2 { height: 340px; }
+
+/* ===== Secciones ===== */
+.seccion { padding: 64px 48px; max-width: 1100px; margin: 0 auto; }
+.seccion-alt { max-width: none; background: var(--BotonPrimario); }
+.seccion-alt > * { max-width: 1100px; margin-left: auto; margin-right: auto; }
+.seccion h2 { font-size: 2rem; margin-bottom: 32px; color: var(--BaseColor2); }
+
+.media-caja {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 140px; background: #cfe9e5; border: 2px dashed var(--BaseColor1);
+  border-radius: 10px; color: var(--BaseColor1);
+}
+
+/* Conócenos */
+.conocenos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
+.conocenos-grid .media-caja { min-height: 260px; }
+
+/* Instalaciones */
+
+.instalaciones-grid { display: grid; grid-template-columns: 1fr 140px 1fr; gap: 32px; align-items: center; }
+.miniaturas { display: flex; flex-direction: column; gap: 50px; }
+.miniaturas .media-caja { min-height: 150px; }
+
+/* Matrícula */
+.pasos { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.paso {
+  padding: 24px; text-align: center; background: var(--BaseColor4);
+  border: 2px solid var(--BaseColor2); border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.numero {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; margin-bottom: 12px; border-radius: 50%;
+  background: var(--BaseColor2); color: var(--letrasBase1); font-weight: bold; font-size: 1.2rem;
+}
+.paso h3 { margin-bottom: 10px; color: var(--BaseColor2); }
+.centrado { text-align: center; margin-top: 40px; }
+
+/* ===== Footer ===== */
+.pie { padding: 24px; text-align: center; background: var(--letrasBase1); color: var(--BaseColor1); }
+
+/* ===== Responsive ===== */
+@media (max-width: 800px) {
+  .encabezado { padding: 12px 20px; }
+  .menu { display: none; }
+  .hero { flex-direction: column; padding: 32px 20px; text-align: center; }
+  .hero h1 { font-size: 2.2rem; }
+  .hero-arcos { margin-top: 32px; }
+  .arco { width: 100px; }
+  .seccion { padding: 40px 20px; }
+  .conocenos-grid, .instalaciones-grid, .pasos { grid-template-columns: 1fr; }
+  .miniaturas { flex-direction: row; }
+  .miniaturas .media-caja { flex: 1; }
+}
 
 /*estilos natalia*/
 
